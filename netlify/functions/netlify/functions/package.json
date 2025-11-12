@@ -1,0 +1,8 @@
+{
+  "name": "the-ink-functions",
+  "version": "1.0.0",
+  "dependencies": {
+    "rss-parser": "^3.12.0",
+    "node-fetch": "^2.6.7"
+  }
+}
