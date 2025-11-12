@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THE INK</title>
+
+<!-- Google Fonts for elegant headlines -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+<div class="header-container">
+<h1>THE INK</h1>
+<p class="tagline">Headlines that turn heads.</p>
+</div>
+</header>
+
+<!-- Top Stories Carousel -->
+<section class="top-stories">
+<h2>Top Stories</h2>
+<div class="carousel" id="topCarousel"></div>
+<div class="carousel-controls">
+<button id="prevBtn">‹</button>
+<button id="nextBtn">›</button>
+</div>
+</section>
+
+<main>
+<section class="feed-input">
+<h2>Add News Sources</h2>
+<textarea id="feedList" placeholder="Enter RSS feed URLs here, one per line"></textarea>
+<div class="buttons">
+<button id="loadBtn">Load Feeds</button>
+<button id="clearBtn">Clear</button>
+</div>
+</section>
+
+<section id="posts">
+<h2>Latest Articles</h2>
+<div id="postList" class="articles-grid"></div>
+</section>
+</main>
+
+<footer>
+<small>INK</small>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
