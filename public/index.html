@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>THE INK — Curated & Cinematic News</title>
+  <meta name="description" content="THE INK — premium curated headlines, fast, ad-safe, editorial-first." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="site">
+    <header class="topbar">
+      <div class="top-inner">
+        <div class="brand">
+          <div class="logo-wrap">
+            <h1 class="logo">THE INK</h1>
+            <span class="logo-badge">Premium</span>
+          </div>
+          <p class="strap">Headlines that turn heads.</p>
+        </div>
+
+        <nav class="cats" aria-label="Categories">
+          <button class="cat active" data-cat="all">Top</button>
+          <button class="cat" data-cat="world">World</button>
+          <button class="cat" data-cat="politics">Politics</button>
+          <button class="cat" data-cat="technology">Tech</button>
+          <button class="cat" data-cat="business">Business</button>
+          <button class="cat" data-cat="sports">Sports</button>
+          <button class="cat" data-cat="culture">Culture</button>
+          <button class="cat" data-cat="food">Food</button>
+          <button class="cat" data-cat="opinion">Opinion</button>
+          <button class="cat" data-cat="science">Science</button>
+          <button class="cat" data-cat="entertainment">Entertainment</button>
+        </nav>
+
+        <div class="header-actions">
+          <button id="refreshNow" title="Refresh">⟳</button>
+        </div>
+      </div>
+
+      <div class="hero" id="hero">
+        <div class="hero-gradient"></div>
+        <div class="hero-inner">
+          <div class="hero-left">
+            <h2 id="heroHeadline">Top Stories — THE INK</h2>
+            <p id="heroSub">Curated, paraphrased and presented for premium reading.</p>
+          </div>
+          <div class="hero-right" id="heroCard">
+            <!-- featured will be injected -->
+          </div>
+        </div>
+        <div class="hero-edge"></div>
+      </div>
+
+      <div class="ticker-wrap" aria-hidden="false">
+        <div class="ticker-label">Breaking</div>
+        <div class="ticker" id="liveTicker" aria-live="polite"><span>Loading headlines…</span></div>
+      </div>
+    </header>
+
+    <main class="main-grid">
+      <aside class="left-col">
+        <section class="featured" id="featuredList">
+          <!-- curated features -->
+        </section>
+
+        <section class="ad ad-vertical">
+          <div class="ad-placeholder">AD SLOT — paste AdSense here</div>
+        </section>
+      </aside>
+
+      <section class="center-col">
+        <div class="section-title-row">
+          <h3 id="sectionTitle">Latest</h3>
+          <div id="lastUpdated" class="muted small"></div>
+        </div>
+
+        <section id="articles" class="articles-grid" aria-live="polite" aria-busy="false">
+          <!-- article cards injected here -->
+        </section>
+
+        <div class="load-more">
+          <button id="loadMore" class="btn-muted">Load more</button>
+        </div>
+      </section>
+
+      <aside class="right-col">
+        <section class="mini-trending">
+          <h4>Trending</h4>
+          <ul id="trendingList"></ul>
+        </section>
+
+        <section class="ad ad-box">
+          <div class="ad-placeholder">AD SLOT — paste AdSense here</div>
+        </section>
+
+        <section class="about">
+          <h5>About THE INK</h5>
+          <p>Curated from 50 trusted sources. Read-only, paraphrased summaries — designed to be ad-safe and premium.</p>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="foot">
+      <div>© <span id="year"></span> THE INK — Curated news • <a href="/health">Health</a></div>
+    </footer>
+  </div>
+
+  <!-- dev feeds hidden -->
+  <div id="devFeeds" style="display:none"><textarea id="feedList"></textarea></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
