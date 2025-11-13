@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE INK</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&family=Lora:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1 class="logo">THE INK</h1>
+    <p class="tagline">Headlines that turn heads.</p>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <ul>
+    <li>World</li>
+    <li>Politics</li>
+    <li>Tech</li>
+    <li>Culture</li>
+    <li>Sports</li>
+    <li>Opinion</li>
+  </ul>
+</nav>
+
+<section class="ticker">
+  <div class="ticker-title">Breaking</div>
+  <div class="ticker-wrap">
+    <div class="ticker-move" id="liveTicker">
+      <span>Loading latest headlines...</span>
+    </div>
+  </div>
+</section>
+
+<section class="carousel-section">
+  <h2>Top Stories</h2>
+  <div class="carousel" id="topCarousel"></div>
+  <div class="carousel-buttons">
+    <button id="prevBtn">‹</button>
+    <button id="nextBtn">›</button>
+  </div>
+</section>
+
+<main class="content">
+  <section class="articles">
+    <h2>Latest Articles</h2>
+    <div id="postList" class="article-grid"></div>
+  </section>
+</main>
+
+<footer>
+  <small>INK © 2025</small>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
